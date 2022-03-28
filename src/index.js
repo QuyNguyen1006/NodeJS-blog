@@ -41,7 +41,7 @@ route(app);
 // app.get("/news", (req, res) => {
 //   res.render("news");
 // });
-const port = process.env.PORT;
-app.listen(port, () =>
+const port = process.env.PORT || 3000;
+app.listen( process.env.PORT, () =>
     console.log(`Example app listening at htpp://localhost:${port}`),
 );
