@@ -1,36 +1,59 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+<div id="header">
+  <div class="grid wide nav">
+    <a href="/" class="navbar-brand"><img src="/img/logo2.png"  width="40" height="40"  alt="logo"></a>
+    <ul class="navbar-list">
+      <li class="navbar-item">
+        <a href="/" class="navbar-item-link">TRANG CHỦ</a>
+      </li>
+      <li class="navbar-item">
+        <a href="/gioi-thieu" class="navbar-item-link">GIỚI THIỆU</a>
+      </li>
+      <li class="navbar-item has-menu-dropdown products">
+        <a href="" class="navbar-item-link">SẢN PHẨM</a>
+        <ul class="dropdown-menu dropdown-menu-products " aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Bàn ghế - Salong</a></li>
+              <li><a class="dropdown-item" href="#">Bàn trang điểm</a></li>
+              <li><a class="dropdown-item" href="#">Đồ thờ</a></li>
+              <li><a class="dropdown-item" href="#">Đồ đồng hồ</a></li>
+              <li><a class="dropdown-item" href="#">Trường kỉ</a></li>
+              <li><a class="dropdown-item" href="#">Tủ - Kệ</a></li>
+              <li><a class="dropdown-item" href="#">Giường</a></li>
+              <li><a class="dropdown-item" href="#">Hoành phi - Câu đối - Cuốn thư - Tranh</a></li>
+              <li><a class="dropdown-item" href="#">Sập gỗ</a></li>
+              <li><a class="dropdown-item" href="#">Đồ mỹ nghệ khác</a></li>
+            </ul>
+      </li>
+      <li class="navbar-item has-menu-dropdown blogs">
+        <a href="" class="navbar-item-link ">CHUYÊN SAN</a>
+        <ul class="dropdown-menu dropdown-menu-blogs" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">Tất cả</a></li>
+          <li><a class="dropdown-item" href="#">Làng nghề Hải Minh</a></li>
+          <li><a class="dropdown-item" href="#">Các loại gỗ</a></li>
+          <li><a class="dropdown-item" href="#">Nội thất gỗ</a></li>
+          <li><a class="dropdown-item" href="#">Tranh gỗ</a></li>
+          <li><a class="dropdown-item" href="#">Đồng hồ gỗ</a></li>
+          <li><a class="dropdown-item" href="#">Phong thủy</a></li>
+          <li><a class="dropdown-item" href="#">Khay trà - dụng cụ trà đạo</a></li>
+          <li><a class="dropdown-item" href="#">Kiến thức</a></li>
+          
+        </ul>
+      </li>
+      <li class="navbar-item">
+        <a href="/lien-he" class="navbar-item-link">LIÊN HỆ</a>
+      </li>
+    </ul>
+    <form class="navbar-search">
+      <input class="navbar-search-input" type="search" placeholder="Tìm kiếm sản phẩm">
+      <button class="navbar-search-btn" type="submit"><i class="navbar-search-icon fas fa-search"></i></button>
+    </form>
+     <div class="navbar-cart">
+      <i class="navbar-cart-icon fas fa-cart-plus"></i>
     </div>
+    <ul class="navbar-sub">
+      <li class="navbar-sub-item">Đăng kí</li>
+      <li class="navbar-sub-item">Đăng nhập</li>
+
+    </ul>
   </div>
-</nav>
+</div>
+

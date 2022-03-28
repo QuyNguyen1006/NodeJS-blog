@@ -1,0 +1,112 @@
+@import 'variables';
+.footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-top: 2px solid #6b160f;
+    padding-top: 32px;
+    background-image: linear-gradient(0, #9b5844, #6b160f);
+    margin-top: 32px;
+    .wrrap-footer {
+        margin-left: 16px;
+        margin-right: 16px;
+        height: 100%;
+        width: 100%;
+    }
+    .footer__heading {
+        font-size: 1.6rem;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: rgb(241, 237, 237);
+    }
+    .footer-list {
+        padding-left: 0;
+        list-style: none;
+    }
+    .footer-item {
+        margin: 12px 30px 12px 0;
+        color: rgb(212, 209, 209);
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+    .footer-item:hover .footer-item-link {
+        color: #e6651b;
+    }
+    .footer-item-link {
+        text-decoration: none;
+        color: rgb(212, 209, 209);
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+    .QR {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .QR_text {
+        font-size: 2rem;
+        font-weight: 600;
+        color: rgb(163, 206, 241);
+        margin-bottom: 12px;
+        display: block;
+    }
+    .QR_zalo_T {
+        width: 150px;
+        height: 150px;
+    }
+    .QR_text-decs {
+        font-size: 1rem;
+        font-weight: 200;
+        color: rgb(163, 158, 158);
+        display: block;
+        padding-top: 10px;
+    }
+    .row-footer-social {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-social-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-social-item {
+        display: block;
+        width: 40px;
+        margin: 0 8px;
+    }
+    .footer-social-item-link {
+        display: block;
+        background-color: transparent;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+    .footer-social-item-link:hover .footer-social-item-icon {
+        color: rgb(54, 53, 53);
+    }
+    .footer-social-item-icon {
+        font-size: 3rem;
+        color: black;
+    }
+    .grid__row-footer-copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__copright {
+        flex: 1;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #ccc;
+    }
+    .footer__copright p {
+        text-align: center;
+    }
+}

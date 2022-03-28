@@ -1,5 +1,212 @@
 @import 'variables';
-h1 {
-    color: $color;
-    background-color: aliceblue;
+@import 'footer';
+@import 'body';
+@import 'responsive';
+@import 'slideShow';
+* {
+    box-sizing: inherit;
 }
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.has-menu-dropdown {
+    position: relative;
+}
+
+@keyframes Growth {
+    from {
+        opacity: 0;
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        opacity: 1;
+    }
+}
+
+// --------------------
+// begin header
+#header {
+    height: $navbar-height;
+    background-image: linear-gradient(0, $color-main-1, $color-main-2);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    display: block;
+    .nav {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .navbar-brand {
+            width: 40px;
+        }
+        .navbar-list {
+            width: 500px;
+            display: flex;
+            .navbar-item:first-child {
+                margin-left: 0;
+            }
+            .navbar-item {
+                // margin-left: 18px;
+                .navbar-item-link:hover {
+                    background-color: $color-main-2;
+                }
+                .navbar-item-link {
+                    cursor: pointer;
+                    width: auto;
+                    display: block;
+                    height: $header-height;
+                    line-height: $header-height;
+                    margin-left: 18px;
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    color: $text-color;
+                }
+            }
+            .products:hover .dropdown-menu-products {
+                display: block !important;
+            }
+            .blogs:hover .dropdown-menu-blogs {
+                display: block !important;
+            }
+            .dropdown-menu {
+                display: block;
+                position: absolute;
+                width: 400px;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                border-radius: 2px;
+                box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
+                animation: Growth ease-in 0.2s;
+                will-change: opacity, transform;
+                display: none;
+                -webkit-animation: Growth ease-in 0.2s;
+                .dropdown-item {
+                    display: block;
+                    font-size: 1.6rem;
+                    color: rgb(66, 65, 65);
+                    font-weight: 500;
+                    padding: 8px 0 8px 16px;
+                    width: 400px;
+                    height: 30px;
+                }
+                .dropdown-item:hover {
+                    background-color: rgb(224, 223, 223);
+                    color: $color-main-1;
+                }
+            }
+            .dropdown-menu::before {
+                content: '';
+                border-width: 12px 16px;
+                border-style: solid;
+                border-color: transparent transparent #fff transparent;
+                position: absolute;
+                top: -24px;
+                z-index: 2;
+                left: 30px;
+            }
+            .dropdown-menu-products {
+                display: none;
+            }
+            .dropdown-menu-blogs {
+                display: none;
+            }
+        }
+        .navbar-search {
+            width: 300px;
+            position: relative;
+            .navbar-search-input {
+                width: 100%;
+                height: 36px;
+                border: none;
+                outline-style: none;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+                font-size: 1.2rem;
+            }
+            .navbar-search-btn:focus {
+                border-color: $color-main-2;
+            }
+            .navbar-search-btn {
+                position: absolute;
+                height: 36px;
+                width: 36px;
+                top: 50%;
+                border: none;
+                background-color: #fff;
+                font-size: 2rem;
+                cursor: pointer;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+                right: 0;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                .navbar-search-icon {
+                    font-size: 2rem;
+                    color: $color-main-2;
+                }
+            }
+        }
+        .navbar-cart {
+            width: 40px;
+            justify-self: center;
+            .navbar-cart-icon {
+                font-size: 2.2rem;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+        .navbar-sub {
+            width: 160px;
+            display: flex;
+            justify-content: center;
+            .navbar-sub-item {
+                font-size: 1.4rem;
+                color: $text-color;
+                width: 50%;
+                text-align: center;
+                flex: 1;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// end header
+// start body
+//end body

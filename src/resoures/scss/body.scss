@@ -1,0 +1,328 @@
+@import 'variables';
+//sidebar - category
+.mt-24 {
+    margin-top: 24px !important;
+}
+
+.mb-24 {
+    margin-bottom: 24px !important;
+}
+
+.grid.wide {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.mt-36 {
+    margin-top: 36px !important;
+}
+
+.container {
+    background-color: #F5F5F5;
+    margin-top: 68px !important;
+    height: max-content;
+}
+
+.category {
+    background-color: $color-main-2;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.category__heading {
+    background-color: $color-main-1;
+    font-size: 1.7rem;
+    color: rgb(245, 240, 240);
+    padding: 10px 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-top: 0;
+}
+
+.category__heading-icon {
+    font-size: 1.4rem;
+    margin-right: 4px;
+    position: relative;
+    top: -1px;
+}
+
+.category-list {
+    text-decoration: none;
+    padding: 0 0 8px 0;
+    margin-left: 10px;
+}
+
+.category-item {}
+
+.category-item__link {
+    position: relative;
+    text-decoration: none;
+    color: rgb(243, 239, 239);
+    font-size: 1.5rem;
+    padding: 8px 16px;
+    display: block;
+    font-weight: 500;
+    right: 0;
+    transition: right linear 0.1s;
+    -webkit-transition: right linear 0.1s;
+    -moz-transition: right linear 0.1s;
+    -ms-transition: right linear 0.1s;
+    -o-transition: right linear 0.1s;
+    cursor: pointer;
+}
+
+.category-item__link:hover {
+    right: -4px;
+    color: $primary-color;
+}
+
+
+/* Face book page */
+
+.facebook-page {
+    display: block;
+    margin-top: 22px;
+    right: 0;
+    border: 1px solid rgb(224, 222, 222);
+    box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
+}
+
+// begin Introduction
+.row.sm-gutter-32 {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.pagination {
+    border-bottom: 1px solid #ccc;
+}
+
+.wrrap-home {
+    margin-top: 8px;
+    width: 100%;
+    h1 {
+        color: rgb(43, 42, 42);
+    }
+}
+
+.text-home {
+    font-size: 1.4rem;
+    color: rgb(3, 3, 3);
+}
+
+.active-page {
+    color: rgb(128, 127, 127);
+}
+
+.wrapp-info-header {
+    display: block;
+}
+
+.wrrap-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+.intro-brand {
+    color: $color-main-1;
+    text-align: center;
+}
+
+.intro-list {
+    margin-top: 24px;
+    margin-left: 24px;
+    .intro-item {
+        height: 48px;
+    }
+    .intro-item-head {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #000;
+    }
+    .intro-item-desc {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: rgb(36, 35, 35);
+    }
+}
+
+.info-text {
+    font-weight: 500;
+    line-height: 3rem;
+    font-size: 1.6rem;
+    color: rgb(61, 60, 60);
+    margin: 8px 0 8px 0;
+}
+
+.info-text-head {
+    margin: 12px 0 12px 0;
+    font-size: 1.8rem;
+    font-weight: 650;
+    color: #B56308;
+}
+
+.text-link {
+    color: rgb(136, 4, 4);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+.text-head-1 {
+    margin: 12px 0 12px 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #252525;
+}
+
+.text-head-2 {
+    margin: 12px 0 12px 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #494949;
+}
+
+.text-brand {
+    color: $color-main-1;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.text-highlight {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #ff0000;
+}
+
+.info-text-1 {
+    font-weight: 500;
+    line-height: 3rem;
+    font-size: 1.6rem;
+    color: rgb(238, 97, 3);
+    margin: 8px 0 8px 0;
+}
+
+.text-note {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.info-content {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    .info-text-list {
+        list-style: square;
+        margin-left: 36px;
+    }
+}
+
+// end Introduction
+//begin contact
+.wraap-contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 24px;
+    .form-submit {
+        position: relative;
+        height: 360px;
+        .form-control {
+            display: flex;
+            height: 36px;
+            width: 100%;
+            margin: 24px 0 24px 0;
+            .input-name {
+                width: 20%;
+            }
+            .input-desc {
+                flex: 1;
+                outline: none;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+            }
+            #question {
+                height: 80px;
+                flex: 1;
+                outline: none;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+            }
+        }
+        .btn-submit {
+            cursor: pointer;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-size: 1.6rem;
+            font-weight: 500;
+            height: 36px;
+            width: 140px;
+            background-color: rgb(253, 9, 9);
+            color: #F5F5F5;
+            border: none;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+        }
+        .btn-submit:hover {
+            background-color: rgb(155, 4, 4);
+        }
+    }
+}
+
+//end contact
+// policy
+.policy-list {
+    list-style: none;
+    margin-top: 36px;
+    >li {
+        counter-increment: step-counter;
+    }
+    >li::before {
+        content: counter(step-counter);
+        margin-right: 20px;
+        font-size: 80%;
+        background-color: #B56308;
+        color: white;
+        font-weight: bold;
+        padding: 3px 8px;
+        border-radius: 11px;
+    }
+    .policy-1 {}
+}
+
+//end policy
+// begin customer support
+.operate {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    .operate-img {
+        width: 100%;
+    }
+}
+
+// end customer support
