@@ -5,7 +5,7 @@ const { engine } = require('express-handlebars');
 const favicon = require('serve-favicon');
 
 const app = express();
-const port = 3000;
+// const port = 3000;
 
 const route = require('./routes/index.router');
 const db = require('./config/db');
@@ -41,6 +41,7 @@ route(app);
 // app.get("/news", (req, res) => {
 //   res.render("news");
 // });
+const port = process.env.PORT;
 app.listen(port, () =>
     console.log(`Example app listening at htpp://localhost:${port}`),
 );
